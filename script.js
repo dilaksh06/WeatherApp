@@ -19,15 +19,15 @@ function getWeather() {
             console.log(data);
         }).catch(error => {
             console.error('Error fetching current weather data', error);
-            alert("errroe");
+            alert("Error fetching current weather data. try again);
         });
 
     fetch(forecastUrl).then(response => response.json())
         .then(data => {
             displayHourlyForcast(data.list)
         }).catch(error => {
-            console.error("error fetching", error);
-            alert("error fetching hourly foecasst");
+            console.error("Error fetching hourly forecast data", error);
+            alert("Error fetching hourly foecasst. try again later");
         })
 
 }
