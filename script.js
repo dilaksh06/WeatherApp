@@ -19,7 +19,7 @@ function getWeather() {
             console.log(data);
         }).catch(error => {
             console.error('Error fetching current weather data', error);
-            alert("Error fetching current weather data. try again);
+            alert("Error fetching current weather data. try again");
         });
 
     fetch(forecastUrl).then(response => response.json())
