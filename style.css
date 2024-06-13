@@ -1,5 +1,6 @@
 body {
     background: #69306D;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
@@ -10,7 +11,7 @@ body {
 
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
-    width: 400px;
+    max-width: 400px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -57,8 +58,8 @@ button:hover {
 #temp-div p {
     font-size: 60px;
     margin-top: -30px;
-
 }
+
 
 #weather-info {
     font-size: 20px;
@@ -70,18 +71,17 @@ button:hover {
     margin: 0 auto 10px;
     margin-bottom: 0;
     display: none;
-
 }
 
 #hourly-forecast {
     margin-top: 50px;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
 }
 
-#hourly-item {
+.hourly-item {
     flex: 0 0 auto;
     width: 80px;
     display: flex;
